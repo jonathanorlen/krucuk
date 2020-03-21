@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Detailpage</title>
+    <style>
+        .opening {
+            font-size:24px;
+            font-weight: bold;
+            margin-top: 4px;
+            margin-left: 12px;
+        }
+
+        .banner {
+            background-size:cover;
+            width:100%;
+            padding-top:50%;
+            position:relative;
+            position: relative;
+        }
+
+        .time {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .address {
+            font-size: 20px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .range {
+            font-size: 20px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+
+        .price {
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .rasio {
+            width: 100%;
+            padding-top: 100%; 
+            position: relative;
+            background-size: cover;
+            margin-top:20px;
+            margin-bottom: 15px;
+            margin-right:4px;
+            margin-left: 4px;
+        }
+        .menu {
+            margin-top: 12px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .review {
+            font-size:28px;
+            text-align:center;
+            margin-top:4px;
+            margin-left: 16px;
+            margin-bottom: 8px;
+        }
+
+        .rating {
+            font-size: 60px;
+            text-align: center;
+            margin-top:4px;
+            margin-bottom: 8px;
+        }
+
+        .view {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .rating_bar {
+            font-size: 12px;
+            margin-right: 16px;
+        }
+
+        .add {
+            font-size: 16px;
+        }
+
+        .moreinfo {
+            font-size:24px;
+            font-weight: bold;
+            margin-top: 4px;
+            margin-left: 12px;
+            margin-bottom: 4px;
+        }
+        
+        .card-body li {
+            margin-left: 12px;
+            margin-top: 4px;
+        }
+
+        .profile {
+            font-size: 12px;
+            margin-top: 4px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .name {
+            padding-top: 15%;
+            font-size: 20px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .total {
+            font-size: 16px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand d-block d-sm-none" href="#"><img src="logo.png" width="150px"></a>
+		<div class="col-md-4 d-none d-md-block">	
+			<a class="navbar-brand" href="#"><img src="logo.png" width="150px"></a>
+		</div>
+		
+		<div class="col-md-4 d-none d-md-block">
+			<input class="form-control col-md-12 col-6" type="search" placeholder="Search" aria-label="Search">
+		</div>
+		<div class="col-md-4 align-content-right d-none d-md-block">
+			<form class="form-inline my-2 my-lg-0 ml-auto">
+				<button class="btn btn-outline-success my-2 my-sm-0 mr-2 ml-auto" type="submit">Log In</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign UP</button>
+			</form>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		   </button>
+		   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<form class="navbar-form form-inline d-block d-sm-none mt-4" action="/action_page.php">
+					<div class="form-group">
+				  	<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<hr class="mt-3">
+					<button class="btn btn-block btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+					<button class="btn btn-block btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+			  	</form>
+		   </div>  
+	</div>
+	</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3 col-sm-12">
+                <img src="nasi.jpg" class="rounded banner" alt="nasi goreng">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col col-md-12 col-sm-12 col-12 col-lg-8">
+                <p class="title">Simple Restoran</p>
+                <p class="address">Araya Mansion No. 8 - 22, Genitri, Tirtomoyo, Kec. Pakis, Malang, Jawa Timur</p>
+                <p>Diisi rating</p>
+                <p class="range">Range Harga : </p>
+                <p class="price">Rp 20.000 - 30.000</p>
+                <div class="row">
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                    <div class="col col-lg-2 col-sm-4 col-12 col-md-4">
+                        <div class="rasio" style="background-image: url(1.jpg);"></div>
+                    </div>
+                </div>
+                <p class="menu">Menu : </p>
+
+                <div class="row">
+                    <div class="col col-lg-3">
+                        <div class="rasio" style="background-image: url(menu.jpg);"></div>
+                    </div>
+                </div>
+
+                <br><br><br><br>
+                
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        <p class="review">Review</p>
+                        <p class="rating">4.5</p>
+                        <p class="view">100 Views</p>
+                    </div>
+                    <div class="col-7 col-lg-7">
+                        
+                        <div class="progress">
+                            <p class="rating_bar">1</p>
+                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>70%</label>
+                        </div><br>
+                        <div class="progress">
+                            <p class="rating_bar">2</p>
+                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>70%</label>
+                        </div><br>
+                        <div class="progress">
+                            <p class="rating_bar">3</p>
+                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>70%</label>
+                        </div><br>
+                        <div class="progress">
+                            <p class="rating_bar">4</p>
+                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>70%</label>
+                        </div><br>
+                        <div class="progress">
+                            <p class="rating_bar">5</p>
+                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>70%</label>
+                        </div><br>
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+
+                <button class="btn btn-secondary btn-lg btn-md btn-sm">
+                    <label for="Add Review" class="add">Add Review</label>
+                </button>
+                <br><br>
+                
+            </div>
+            <div class="col col-md-12 col-sm-12 col-12 col-lg-4">
+                <div class="card">
+                    <p class="opening">Opening Hours</p>
+                    <div class="card-body">
+                      <div class="row">
+                          <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Senin</div>
+                          <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time ">08.00 - 22.00</div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Selasa</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time ">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Rabu</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time ">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Kamis</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time ">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Jumat</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time ">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Sabtu</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Minggu</div>
+                        <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time">08.00 - 22.00</div>
+                    </div>
+                    <br>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <p class="moreinfo">More Info</p>
+                    <div class="card-body">
+                        <ul class="list-group" type="disc">
+                            <li>Free Wi-fi</li>
+                            <li>Good Service</li>
+                            <li>Buffet</li>
+                            <li>Discount 50%</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col col-lg-2">
+                <div class="rasio rounded-circle" style="background-image: url(richie.jpg);"></div>
+                <p class="profile">Rated 5</p>
+            </div>
+            <div class="col col-lg-3">
+                <p class="name">Richie</p>
+                <p class="total">16 Reviews</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

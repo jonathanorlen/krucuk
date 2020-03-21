@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+
+    <title>User Jadwal</title>
+
+    <style>
+        .rasio {
+            width: 100%;
+            padding-top: 100%; 
+            position: relative;
+            background-size: cover;
+            margin-top:20px;
+            margin-bottom: 15px;
+            margin-right:4px;
+            margin-left: 4px;
+        }
+
+        .toko {
+            font-size: 16px;
+            margin-top: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 32px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            padding-left: 15%;
+        }
+
+        .namaresto {
+            font-size: 24px;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+
+        .tanggal {
+            font-size: 20px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .jam {
+            font-size: 20px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .datespecific {
+            font-size: 28px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            padding-left: 5%;
+        }
+
+        .atur {
+            padding-top: 20%;
+        }
+
+        .data {
+            font-size: 16px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .margin {
+            margin-top: 36px;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand d-block d-sm-none" href="#"><img src="logo.png" width="150px"></a>
+		<div class="col-md-4 d-none d-md-block">	
+			<a class="navbar-brand" href="#"><img src="logo.png" width="150px"></a>
+		</div>
+		
+		<div class="col-md-4 d-none d-md-block">
+			<input class="form-control col-md-12 col-6" type="search" placeholder="Search" aria-label="Search">
+		</div>
+		<div class="col-md-4 align-content-right d-none d-md-block">
+			<form class="form-inline my-2 my-lg-0 ml-auto">
+				<button class="btn btn-outline-success my-2 my-sm-0 mr-2 ml-auto" type="submit">Log In</button>
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign UP</button>
+			</form>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		   </button>
+		   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<form class="navbar-form form-inline d-block d-sm-none mt-4" action="/action_page.php">
+					<div class="form-group">
+				  	<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+					<hr class="mt-3">
+					<button class="btn btn-block btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+					<button class="btn btn-block btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+			  	</form>
+		   </div>  
+	</div>
+	</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-2 col-12 col-md-12 col-sm-12 atur">
+                <div class="rasio rounded-circle" style="background-image: url(richie.jpg);"></div>
+                <p class="toko">Richie</p>
+                <p class="data">3 reviews | 2 rencana</p>
+                <center><button class="btn btn-outline-primary">Edit Profile</button></center>
+            </div>
+
+            <div class="col col-lg-10 col-12 col-md-12 col-sm-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active margin" href="user jadwal.html ">Rencana</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link margin" href="gridreview.html">Reviews</a>
+                    </li>
+                </ul>
+                <br><br>
+                <div class="card">
+                    <p class="date">24 - 25 Maret</p>
+                    
+                    <br><br><br>
+                    
+                    <p class="datespecific">24 Maret</p>
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">09.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">15.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">19.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <p class="datespecific">25 Maret</p>
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">09.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">15.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 my-2">
+                        <div class="row">
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
+                                Hello
+                            </div>
+                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                                <div class="rasio" style="background-image: url(1.jpg);"></div>
+                            </div>
+                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                                <font class="namaresto">Sambal Sarumpaet</font><br>
+                                <i class="fas fa-calendar-week"></i>
+                                <font class="tanggal">24 Maret 2020</font><br>
+                                <i class="fas fa-clock"></i>
+                                <font class="jam">19.00</font>
+                            </div>
+                            <div class="col col-lg-1 col-1">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
