@@ -23,7 +23,9 @@
             margin-right:4px;
             margin-left: 4px;
         }
-
+        .toko{
+            text-align: center;
+        }
         .atur {
             padding-top: 15%;
         }
@@ -35,6 +37,7 @@
 
         .number {
             font-size: 64px;
+            text-align: right;
         }
 
         .word {
@@ -46,8 +49,18 @@
         }
 
         .posisi {
-            padding-top: 8%;
+            padding-top: 15%;
             padding-left: 8%;
+        }
+        .review{
+            text-align: right;
+            font-size: 36px;
+            color:lightgrey;
+        }
+        .bulan{
+            font-size: 24px;
+            text-align: left;
+            color:lightgrey;
         }
 
     </style>
@@ -91,38 +104,39 @@
     <div class="container">
         <div class="row">
             <div class="col col-lg-2 col-12 col-sm-12 atur">
-                <div class="rasio rounded-circle" style="background-image: url(1.jpg);"></div>
-                <p class="toko">Sambal Sarumpaet</p>
+                <div class="rasio rounded-circle" style="background-image: url('Finpro/Bakso President/president3.jpg');"></div>
+                <p class="toko">Bakso President</p>
                 <center><button class="btn btn-outline-primary">Edit Toko</button></center>
             </div>
             <div class="col col-lg-10 col-12 col-sm-12 posisi">
                 <div class="row">
                     <div class="bingkai col-lg-5 mx-2 my-4 col-sm-12 col-12 col-md-5">
+                        <div class="review">Review</div>
                         <div class="row">
-                            <div class="col col-lg-9 col-md-9 col-sm-9 col-9">
-                                <p class="number">450</p>
-                                <p class="word">Review Bulan Ini</p>
+                            <div class="col col-lg-3 col-md-3 col-sm-3 col-3">
+                                <i class="fas fa-star logo"></i>
                             </div>
+                            <div class="col col-lg-9 col-md-9 col-sm-9 col-9">
+                                <p class="number">200</p>
+                            </div>
+                        </div>
+                        <div class="bulan">Bulan Ini</div>
+                    </div>
+
+                    <div class="bingkai col-lg-5 mx-2 my-4 col-sm-12 col-12 col-md-5">
+                        <div class="review">Kunjungan</div>
+                        <div class="row">
                             <div class="col col-lg-3 col-md-3 col-sm-3 col-3">
                                 <i class="fas fa-eye logo"></i>
                             </div>
+                            <div class="col col-lg-9 col-md-9 col-sm-9 col-9">
+                                <p class="number">150</p>
+                            </div>
                         </div>
+                        <div class="bulan">Bulan Ini</div>
                     </div>
 
-                    <div class="bingkai col-lg-5 mx-2 my-4 col-sm-12 col-12 col-md-5">
-                        <p class="number">40000</p>
-                        <p class="word">List Bulan Ini</p>
-                    </div>
-
-                    <div class="bingkai col-lg-5 mx-2 my-4 col-sm-12 col-12 col-md-5">
-                        <p class="number">40000</p>
-                        <p class="word">Kunjungan Toko Bulan Ini</p>
-                    </div>
-
-                    <div class="bingkai col-lg-5 mx-2 my-4 col-sm-12 col-12 col-md-5">
-                        <p class="number">3000</p>
-                        <p class="word">Kunjungan Profile Bulan Ini</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
