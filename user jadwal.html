@@ -34,7 +34,7 @@
             font-size: 32px;
             margin-top: 8px;
             margin-bottom: 8px;
-            padding-left: 15%;
+            padding-left: 10%;
         }
 
         .namaresto {
@@ -76,6 +76,132 @@
         .margin {
             margin-top: 36px;
             
+        }
+
+        .tombol{
+            color: black;
+            background-color: white;
+            border-color: #F96240;
+        }
+
+        .lainlain{
+            color:black;
+            background-color: white;
+            border-color: gray;
+            
+            margin-top: 200%;
+            margin-right: 100%;
+            margin-left: 20%;
+        }
+
+        .lainlain1{
+            color:black;
+            background-color: white;
+            border-color: gray;
+            
+            
+            padding-top: 50%;
+            padding-left: 50%;
+            padding-right: 50%;
+            padding-bottom: 50%;
+        }
+
+
+        <!-- CSS Untuk Checkbox -->
+        .container {
+            margin: 0 auto;
+        }
+  
+        .round {
+            position: relative;
+        }
+  
+        .round label {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 36px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 36px;
+        }
+
+        .round label:after {
+            border: 4px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 9px;
+            left: 10px;
+            opacity: 0;
+            position: absolute;
+            top: 12px;
+            transform: rotate(-45deg);
+            width: 18px;
+        }
+
+        .round input[type="checkbox"] {
+            visibility: hidden;
+        }
+
+        .round input[type="checkbox"]:checked + label {
+            background-color: #66bb6a;
+            border-color: #66bb6a;
+        }
+
+        .round input[type="checkbox"]:checked + label:after {
+            opacity: 1;
+        }
+
+
+
+        .container {
+            margin: 0 auto;
+        }
+  
+        .round1 {
+            position: relative;
+        }
+  
+        .round1 label {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            height: 48px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 48px;
+        }
+
+        .round1 label:after {
+            border: 5px solid #fff;
+            border-top: none;
+            border-right: none;
+            content: "";
+            height: 12px;
+            left: 14px;
+            opacity: 0;
+            position: absolute;
+            top: 16px;
+            transform: rotate(-45deg);
+            width: 24px;
+        }
+
+        .round1 input[type="checkbox"] {
+            visibility: hidden;
+        }
+
+        .round1 input[type="checkbox"]:checked + label {
+            background-color: #66bb6a;
+            border-color: #66bb6a;
+        }
+
+        .round1 input[type="checkbox"]:checked + label:after {
+            opacity: 1;
         }
     </style>
   </head>
@@ -124,7 +250,7 @@
                 <div class="rasio rounded-circle" style="background-image: url(richie.jpg);"></div>
                 <p class="toko">Richie</p>
                 <p class="data">3 reviews | 2 rencana</p>
-                <center><button class="btn btn-outline-primary">Edit Profile</button></center>
+                <center><button class="btn tombol">Edit Profile</button></center>
             </div>
 
             <div class="col col-lg-10 col-12 col-md-12 col-sm-12">
@@ -138,20 +264,38 @@
                 </ul>
                 <br><br>
                 <div class="card">
-                    <p class="date">10 - 11 April</p>
+                    <div class="row">
+                        <div class="col col-lg-5 col-8 mx-2 my-3">
+                            <font class="date">10 - 11 April</font>
+                        </div>
+                        <div class="col col-lg-1 col-2 my-3">
+                            <div class="container">
+                                <div class="round">
+                                  <input type="checkbox" id="checkbox" />
+                                  <label for="checkbox"></label>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    
                     
                     <br><br><br>
                     
                     <p class="datespecific">10 April</p>
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="pagi1" />
+                                      <label for="pagi1"></label>
+                                    </div>
+                                
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="card-image rasio" style="background-image: url('Finpro/Mie Yan/yan1.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 
                                 <font class="namaresto">Mie Yan</font><br>
                                 <i class="fas fa-calendar-week"></i>
@@ -160,20 +304,25 @@
                                 <font class="jam">08.30</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="siang1" />
+                                      <label for="siang1"></label>
+                                    </div>
+                                
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="rasio" style="background-image: url('Finpro/Sate Blora/blora1.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 <font class="namaresto">Sate Khas Blora</font><br>
                                 <i class="fas fa-calendar-week"></i>
                                 <font class="tanggal">10 April 2020</font><br>
@@ -181,20 +330,25 @@
                                 <font class="jam">13.00</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="malam1" />
+                                      <label for="malam1"></label>
+                                    </div>
+                                  
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="rasio" style="background-image: url('Finpro/STMJ Pak Sentot/stmj4.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 <font class="namaresto">STMJ Pak Sentot</font><br>
                                 <i class="fas fa-calendar-week"></i>
                                 <font class="tanggal">10 April 2020</font><br>
@@ -202,7 +356,7 @@
                                 <font class="jam">20.00</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>
@@ -210,13 +364,18 @@
                     <p class="datespecific">11 April</p>
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="pagi2" />
+                                      <label for="pagi2"></label>
+                                    </div>
+                                  
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="rasio" style="background-image: url('Finpro/Bu Kris/bukris1.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 <font class="namaresto">Ayam Goreng Bu Kris</font><br>
                                 <i class="fas fa-calendar-week"></i>
                                 <font class="tanggal">11 April 2020</font><br>
@@ -224,20 +383,25 @@
                                 <font class="jam">10.00</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="siang2" />
+                                      <label for="siang2"></label>
+                                    </div>
+                                
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="rasio" style="background-image: url('Finpro/Bebek Ndower/ndower2.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 <font class="namaresto">Bebek Mbok Ndower</font><br>
                                 <i class="fas fa-calendar-week"></i>
                                 <font class="tanggal">11 April 2020</font><br>
@@ -245,20 +409,25 @@
                                 <font class="jam">20.00</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>
 
                     <div class="card mx-3 my-2">
                         <div class="row">
-                            <div class="col col-lg-1 col-md-1 col-sm-1 col-1">
-                                Hello
+                            <div class="col col-lg-1 col-md-1 col-sm-1 col-2">
+                                
+                                    <div class="round1 lainlain">
+                                      <input type="checkbox" id="malam2" />
+                                      <label for="malam2"></label>
+                                    </div>
+                                
                             </div>
-                            <div class="col col-lg-2 col-2 col-md-2 col-sm-2">
+                            <div class="col col-lg-4 col-8 col-md-2 col-sm-2">
                                 <div class="rasio" style="background-image: url('Finpro/Coffee Toffee/coffee2.jpg');"></div>
                             </div>
-                            <div class="col col-lg-8 col-md-8-col-sm-8 col-7">
+                            <div class="col col-lg-6 col-md-8-col-sm-8 col-12">
                                 <font class="namaresto">Coffee Toffee</font><br>
                                 <i class="fas fa-calendar-week"></i>
                                 <font class="tanggal">11 April 2020</font><br>
@@ -266,7 +435,7 @@
                                 <font class="jam">20.00</font>
                             </div>
                             <div class="col col-lg-1 col-1">
-                                <i class="fas fa-eye"></i>
+                                
                             </div>
                         </div>
                     </div>

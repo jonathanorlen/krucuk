@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/plugin/slick/slick.css">
-	<link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <title>Detailpage</title>
     <style>
         .opening {
@@ -16,6 +17,7 @@
             font-weight: bold;
             margin-top: 4px;
             margin-left: 12px;
+            color: #37F9C2;
         }
 
         .banner {
@@ -71,7 +73,7 @@
             width: 100%;
             padding-top: 80%; 
             position: relative;
-            background-size: cover;
+            background-size:contain;
             
         }
         .menu {
@@ -109,6 +111,10 @@
 
         .add {
             font-size: 16px;
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            
         }
 
         .moreinfo {
@@ -141,6 +147,31 @@
             font-size: 16px;
             margin-bottom: 8px;
             margin-top: 8px;
+        }
+
+        .tombol{
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+            background-color: #F96240;
+        }
+
+        .lainlain{
+            color: white;
+            background-color: #F96240;
+        }
+
+        .comment{
+            padding-top: 2%;
+            font-size: 20px;
+            margin-bottom: 4px;
+            margin-top: 4px;
+            margin-left: 12px;
         }
     </style>
   </head>
@@ -192,33 +223,38 @@
         </div>
         <br><br>
         <div class="row">
-            <div class="col col-md-12 col-sm-12 col-12 col-lg-8">
+            <div class="col col-md-12 col-sm-12 col-12 col-lg-7 my-4">
                 <p class="title">Simple Restoran</p>
                 <p class="address">Araya Mansion No. 8 - 22, Genitri, Tirtomoyo, Kec. Pakis, Malang, Jawa Timur</p>
-                <p>Diisi rating</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+                <font>4.5 / 5</font>
                 <p class="range">Range Harga : </p>
                 <p class="price">Rp 20.000 - 30.000</p>
                 <div class="row">
-                    <div class="col col-sm-4 col-12 col-md-2">
+                    <div class="col col-sm-4 col-12 col-md-2 my-3">
                         <div class="card-image rasio" style="background-image: url('Finpro/Coffee Toffee/coffee1.jpg');"></div>
                     </div>                 
-                    <div class="col col-sm-4 col-12 col-md-2">
+                    <div class="col col-sm-4 col-12 col-md-2 my-3">
                         <div class="card-image rasio" style="background-image: url('Finpro/Coffee Toffee/coffee2.jpg');"></div>
                     </div>  
-                    <div class="col col-sm-4 col-12 col-md-2">
+                    <div class="col col-sm-4 col-12 col-md-2 my-3">
                         <div class="card-image rasio" style="background-image: url('Finpro/Coffee Toffee/coffee3.jpg');"></div>
                     </div>  
-                    <div class="col col-sm-4 col-12 col-md-2">
+                    <div class="col col-sm-4 col-12 col-md-2 my-3">
                         <div class="card-image rasio" style="background-image: url('Finpro/Coffee Toffee/coffee4.jpg');"></div>
                     </div>  
-                    <div class="col col-sm-4 col-12 col-md-2">
+                    <div class="col col-sm-4 col-12 col-md-2 my-3">
                         <div class="card-image rasio" style="background-image: url('Finpro/Coffee Toffee/coffee5.jpg');"></div>
                     </div>  
                 </div>
                 <p class="menu">Menu : </p>
 
                 <div class="row">
-                    <div class="col col-lg-3">
+                    <div class="col col-lg-8">
                         <div class="rasio2" style="background-image: url('Finpro/Coffee Toffee/coffee6.jpg');"></div>
                     </div>
                 </div>
@@ -235,23 +271,23 @@
                         
                         <div class="progress">
                             <p class="rating_bar">1</p>
-                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            <label>70%</label>
+                            <div class="progress-bar" style="width:10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>10%</label>
                         </div><br>
                         <div class="progress">
                             <p class="rating_bar">2</p>
-                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            <label>70%</label>
+                            <div class="progress-bar" style="width:25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>25%</label>
                         </div><br>
                         <div class="progress">
                             <p class="rating_bar">3</p>
-                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            <label>70%</label>
+                            <div class="progress-bar" style="width:20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>20%</label>
                         </div><br>
                         <div class="progress">
                             <p class="rating_bar">4</p>
-                            <div class="progress-bar" style="width:70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            <label>70%</label>
+                            <div class="progress-bar" style="width:55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            <label>55%</label>
                         </div><br>
                         <div class="progress">
                             <p class="rating_bar">5</p>
@@ -265,13 +301,14 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                 </div>
                 
-                <button class="btn btn-warning btn-lg btn-md btn-sm">
-                    <label for="Add Review" class="add">Add Review</label>
+                <button class="btn btn-lg btn-md btn-sm tombol rounded" type="button">
+                    <p class="add">Add Review</p>
                 </button>
+                
                 <br><br>
                 
             </div>
-            <div class="col col-md-12 col-sm-12 col-12 col-lg-4">
+            <div class="col col-md-12 col-sm-12 col-12 col-lg-4 my-2">
                 <div class="card">
                     <p class="opening">Opening Hours</p>
                     <div class="card-body">
@@ -309,6 +346,7 @@
                         <div class="col col-sm-8 col-lg-6 col-md-6 col-6 time">Minggu</div>
                         <div class="col col-sm-6 col-lg-6 col-md-6 col-6 time">08.00 - 22.00</div>
                     </div>
+                    
                     <br>
                     </div>
                 </div>
@@ -326,17 +364,20 @@
                 </div>
                 
             </div>
+            
         </div>
         <br><br>
         <div class="row">
             <div class="col col-lg-2">
                 <div class="rasio rounded-circle" style="background-image: url(richie.jpg);"></div>
                 <p class="profile">Rated 5</p>
+                <p class="comment">Like It 3000</p>
             </div>
             <div class="col col-lg-3">
                 <p class="name">Richie</p>
-                <p class="total">16 Reviews</p>
+                <p class="total">08 Mei 2020 - 14.00</p>
             </div>
+            
         </div>
     </div>
     
