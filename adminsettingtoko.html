@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/plugin/slick/slick.css">
+	<link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+
+    <title>Admin Setting Toko</title>
+    <style>
+        .rasio2banding1 {
+            width: 100%;
+            padding-top: 50%; 
+            position: relative;
+            background-size: cover;
+            
+        }
+        .rasio1banding1 {
+            width: 100%;
+            padding-top: 100%; 
+            position: relative;
+            background-size: cover;
+            
+        }
+        .cover{
+            font-size: 24px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            margin-left: 16px;
+            margin-right: 20px;
+        }
+
+        .judul{
+            font-size: 24px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 16px;
+            margin-right: 20px;
+        }
+
+        .kontak{
+            font-size: 32px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            margin-left: 16px;
+            margin-right: 20px;
+        }
+
+        .jam{
+            font-size: 32px;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            margin-left: 16px;
+            margin-right: 20px;
+        }
+
+        .tombol{
+            color:black;
+            background-color: white;
+            border-color: #F96240;
+        }
+
+        .ubah{
+            color: white;
+            background-color: #F96240;
+            border-color: #F96240;
+            margin-left: 5%;
+        }
+
+        .kategori{
+            width: 100%;
+            height: 150%;
+        }
+
+        .hari{
+            width: 30%;
+            height: 45%;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-5 navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<a class="navbar-brand d-block d-sm-none" href="#"><img src="logo.png" width="150px"></a>
+			<div class="col-md-3 d-none d-md-block">	
+				<a class="navbar-brand" href="#"><img src="logo.png" width="150px"></a>
+			</div>
+
+			<div class="col-md-6 d-none d-md-block">
+				<input class="form-control search-form col-md-12 col-6" type="search" placeholder="Search Restoran" aria-label="Search">
+			</div>
+			<div class="col-md-3 align-content-right d-none d-md-block">
+				<form class="form-inline my-2 my-lg-0 ml-auto">
+					<button class="btn btn-login my-2 my-sm-0 mr-2 ml-auto rounded" type="submit">Log In</button>
+					<button class="btn btn-signup rounded my-2 my-sm-0" type="submit">Sign Up</button>
+				</form>
+			</div>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<form class="navbar-form form-inline d-block d-sm-none mt-4" action="/action_page.php">
+					<div class="form-group">
+						<input type="text" class="form-control search-form" placeholder="Search Restoran">
+					</div>
+					<button type="submit" class="btn btn-primary float-right">Submit</button>
+					<div class="clearfix"></div>
+					<hr class="mt-3">
+					<div class="row">
+						<button class="btn col-6 btn-login my-2 my-sm-0" type="submit">Log In</button>
+						<button class="btn col-6 btn-signup my-2 my-sm-0" type="submit">Sign Up</button>
+					</div>
+				</form>
+			</div>  
+		</div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 col-12 col-md-6 col-sm-12">
+            <div class="rasio2banding1" style="background-image: url('finpro/Coffee Toffee/coffee2.jpg');"></div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <p class="cover">Cover</p>
+            <button class="btn rounded tombol">Ubah</button>
+        </div>
+        <div class="row">
+            <div class="col col-lg-2 col-6 my-2">
+                <div class="card-image rasio1banding1" style="background-image: url('finpro/Coffee Toffee/coffee1.jpg');"></div>
+            </div>
+            <div class="col col-lg-2 col-6 my-2">
+                <div class="card-image rasio1banding1" style="background-image: url('finpro/Coffee Toffee/coffee3.jpg');"></div>
+            </div>
+            <div class="col col-lg-2 col-6 my-2">
+                <div class="card-image rasio1banding1" style="background-image: url('finpro/Coffee Toffee/coffee4.jpg');"></div>
+            </div>
+            <div class="col col-lg-2 col-6 my-2">
+                <div class="card-image rasio1banding1" style="background-image: url('finpro/Coffee Toffee/coffee5.jpg');"></div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Nama Toko</p>
+            <div class="container">
+            <input type="text" class="form-control" id="namatoko" placeholder="Nama Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Alamat</p>
+            <div class="container">
+            <input type="text" class="form-control" id="alamat" placeholder="Alamat Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Kategori</p>
+            <div class="container">
+                <select id="kategori" class="kategori">
+                    <option id="pilih" value="pilih">Pilih Kategori</option>
+                    <option id="traditional" value="traditional">Traditional</option>
+                    <option id="pedas" value="pedas">Pedas</option>
+                    <option id="western" value="western">Western</option>
+                    <option id="chinese" value="chinese">Chinese</option>
+                    <option id="cafe" value="cafe">Cafe</option>
+                    <option id="bakery" value="bakery">Bakery</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <p class="kontak">Kontak</p>
+        </div>
+        <div class="row">
+            <p class="judul">Nomor Telepon</p>
+            <div class="container">
+            <input type="text" class="form-control" id="nomortelepon" placeholder="Nomor Telepon Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Instagram</p>
+            <div class="container">
+            <input type="text" class="form-control" id="instagram" placeholder="Akun Instagram Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Whatsapp</p>
+            <div class="container">
+            <input type="text" class="form-control" id="whatsapp" placeholder="Whatsapp Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="judul">Facebook</p>
+            <div class="container">
+            <input type="text" class="form-control" id="facebook" placeholder="Akun Facebook Toko">
+            </div>
+        </div>
+        <div class="row">
+            <p class="jam">Jam Operasional</p>
+        </div>
+        <div class="row">
+            <div class="container">
+            <label class="judul">Hari : </label>
+            <select id="hari" class="hari">
+                <option id="pilihhari" value="pilihhari">Pilih Hari</option>
+                <option id="senin" value="senin">Senin</option>
+                <option id="selasa" value="selasa">Selasa</option>
+                <option id="rabu" value="rabu">Rabu</option>
+                <option id="kamis" value="kamis">Kamis</option>
+                <option id="jumat" value="jumat">Jumat</option>
+                <option id="sabtu" value="sabtu">Sabtu</option>
+                <option id="minggu" value="minggu">Minggu</option>
+            </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <form class="form-inline my-5">
+                <div class="col col-lg-5 col-12 form-group">
+                    <input type="text" class="form-control" id="facebook" placeholder="Jam Buka" size="45">
+                </div> 
+                <div class="col col-lg-6 col-12 form-group">
+                    <input type="text" class="form-control" id="facebook" placeholder="Jam Tutup" size="45">
+                </div>
+                <div class="col col-lg-1  col-2 form-group">
+                <button type="submit" class="btn btn-lg ubah">Ubah</button>
+                </div>    
+                </form>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
