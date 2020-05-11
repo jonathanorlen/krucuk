@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/plugin/slick/slick.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <style type="text/css"></style>
+
+
+    <title>Category</title>
+    <style>
+        .rasio {
+            width: 100%;
+			padding-top: 50%; 
+            position:relative;
+            background-size:cover;
+        }
+
+        .kategori {
+           font-weight: bold;
+           font-size: 50px;
+           text-align: center;
+           padding-top: 8%;
+        }
+
+        .font-kanan{
+            text-align: right;
+        }
+
+        .bintang{
+          color: #FFBF23;
+        }
+
+        *{
+        box-sizing: border-box;
+        }
+
+        .padding{
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .gambar{
+            border-radius: 4%;
+            margin-top: 50px;
+        }
+
+        .tombol{
+            color: white;
+            background-color: #F96240;
+            padding: 5px;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .alamatTipe{
+            color: #A0A3A6;
+            font-size: 16px;
+        }
+
+        .namaResto{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .aside{
+            margin-top: 50px;
+        }
+
+        .harga{
+            color: #F96240;
+            font-size: 16px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-5 navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <a class="navbar-brand d-block d-sm-none" href="#"><img src="logo.png" width="150px"></a>
+                <div class="col-md-3 d-none d-md-block">
+                    <a class="navbar-brand" href="#"><img src="logo.png" width="150px"></a>
+                </div>
+        
+                <div class="col-md-6 d-none d-md-block">
+                    <input class="form-control search-form col-md-12 col-6" type="search" placeholder="Search Restoran"
+                        aria-label="Search">
+                </div>
+                <div class="col-md-3 align-content-right d-none d-md-block">
+                    <form class="form-inline my-2 my-lg-0 ml-auto">
+                        <button class="btn btn-login my-2 my-sm-0 mr-2 ml-auto rounded" type="submit">Log In</button>
+                        <button class="btn btn-signup rounded my-2 my-sm-0" type="submit">Sign Up</button>
+                    </form>
+                </div>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <form class="navbar-form form-inline d-block d-sm-none mt-4" action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control search-form" placeholder="Search Restoran">
+                        </div>
+                        <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        <div class="clearfix"></div>
+                        <hr class="mt-3">
+                        <div class="row">
+                            <button class="btn col-6 btn-login my-2 my-sm-0" type="submit">Log In</button>
+                            <button class="btn col-6 btn-signup my-2 my-sm-0" type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="padding">
+    <div class="container">
+        <p class="kategori">Spicy</p>
+    </div>
+
+    <div clas="container">
+        <div class="row">
+            <div class="col col-md-3 col-lg-3 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col col-md-6 col-lg-6 col-sm-12 col-12">
+                        <div class="aside font-kanan"><b>Filter</b></div><br>
+                    </div>
+                    <div class="col col-md-6 col-lg-6 col-sm-12 col-12">
+                        <div class="aside font-kanan">clear filter</div><br>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Minimum">Minimum</label>
+                                <input type="text" name="" class="form-control" placeholder="Masukkan Harga" id="Minimum">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="Maximum">Maksimum</label>
+                                <input type="text" name="" class="form-control" placeholder="Masukkan Harga" id="Maksimum">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div><b>Rating</b></div>
+                    <div class="row">
+                        <div class="font-kanan col col-md-4 col-lg-4 col-sm-4 col-4">
+                            <i class="fas fa-star bintang"></i>
+                        </div>
+                        <div class="font-kanan col col-md-4 col-lg-4 col-sm-4 col-4">
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                        </div>
+                        <div class="font-kanan col col-md-4 col-lg-4 col-sm-4 col-4">
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="font-kanan col col-md-6 col-lg-6 col-sm-6 col-6">
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                        </div>
+                        <div class="font-kanan col col-md-6 col-lg-6 col-sm-6 col-6">
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                            <i class="fas fa-star bintang"></i>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="Kategori"><b>Kategori</b></label>
+                        <input type="text" name="" class="form-control" placeholder="Western" id="Kategori">
+                        <input type="text" name="" class="form-control" placeholder="Pedas" id="Kategori">
+                        <input type="text" name="" class="form-control" placeholder="Chinese" id="Kategori">
+                        <input type="text" name="" class="form-control" placeholder="Tradisional" id="Kategori">
+                        <input type="text" name="" class="form-control" placeholder="Cake" id="Kategori">
+                        <input type="text" name="" class="form-control" placeholder="Kafe" id="Kategori">
+                    </div><br>
+                    <center>
+                        <button class="tombol" type="submit">Sumbit</button>
+                    </center>
+                </form>
+            </div>
+            <div class="col col-md-9 col-lg-9 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 col-sm-4 col-4">
+                        <div class="rasio gambar" style="background-image: url('Finpro/Ayam lodho Kaliurang/ayamlodho1.jpg');"></div>
+                        <div class="namaResto">Ayam Lodho Kaliurang</div>
+                        <div class="alamatTipe"> Lowokwaru </div>
+                        <div class="alamatTipe">Restoran, Traditional</div>
+                        <div class="harga">Rp. 25.000-100.000</div>
+                    </div>
+                </div>
+            </d>
+        </div>
+    </div>
+</main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
